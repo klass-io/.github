@@ -6,7 +6,7 @@ O Klass guarda dados de escolas, famílias, crianças e adolescentes. Se você e
 
 **Não abra uma issue pública, não comente em PR e não divulgue a falha** antes de ela ser corrigida.
 
-Reporte pelo **GitHub Private Vulnerability Reporting**: abra a aba **Security** do repositório afetado e clique em **Report a vulnerability**. Se não souber qual repositório é o afetado, use qualquer um da organização.
+Reporte pelo **GitHub Private Vulnerability Reporting**, neste link: [github.com/klass-io/.github/security/advisories/new](https://github.com/klass-io/.github/security/advisories/new). O relatório chega só ao time, nunca fica público. Use esse mesmo link para qualquer parte do produto: os outros repositórios da organização são privados.
 
 Inclua, se possível:
 
