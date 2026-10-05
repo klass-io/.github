@@ -32,4 +32,5 @@ O produto está em desenvolvimento ativo. Os repositórios entram nesta organiza
 ### Links
 
 - 🌐 [klass.com.br](https://klass.com.br)
+- 💬 Precisa de ajuda? Veja os [canais de suporte](https://github.com/klass-io/.github/blob/main/SUPPORT.md).
 - 🛡️ Encontrou uma falha de segurança? Veja a nossa [política de segurança](https://github.com/klass-io/.github/blob/main/SECURITY.md).
