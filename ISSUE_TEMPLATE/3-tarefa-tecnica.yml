@@ -1,0 +1,43 @@
+name: 🛠️ Tarefa técnica
+description: Infraestrutura, dependência, refatoração ou manutenção, sem mudar o comportamento para o usuário.
+title: "chore(<escopo>): "
+labels: ["chore"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - infra
+        - chore
+    validations:
+      required: true
+
+  - type: input
+    id: card
+    attributes:
+      label: Card do Kanban
+      placeholder: "11"
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Por que isso precisa ser feito agora.
+    validations:
+      required: true
+
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Critério de pronto
+      value: |
+        - [ ]
+    validations:
+      required: true
+
+  - type: input
+    id: adr
+    attributes:
+      label: ADR relacionada
+      description: Se a tarefa aplica ou muda uma decisão técnica, cite a ADR.

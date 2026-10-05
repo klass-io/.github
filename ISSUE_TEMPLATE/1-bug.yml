@@ -1,0 +1,88 @@
+name: 🐞 Bug
+description: Algo não funciona como a spec diz que deveria.
+title: "fix(<escopo>): "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, confira se já não existe uma issue igual.
+        **Não cole dado pessoal real** (nome, CPF, telefone, foto) de aluno, responsável ou professor. Use os dados de exemplo.
+
+  - type: input
+    id: card
+    attributes:
+      label: Card do Kanban
+      description: Número do card no Kanban Klass, se já existir.
+      placeholder: "57"
+
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Ambiente
+      options:
+        - Produção
+        - Homologação
+        - Local
+    validations:
+      required: true
+
+  - type: dropdown
+    id: perfil
+    attributes:
+      label: Perfil afetado
+      multiple: true
+      options:
+        - Responsável
+        - Aluno
+        - Professor
+        - Gestor
+        - Admin Klass
+        - Nenhum (só backend ou infraestrutura)
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Entrar como ...
+        2. Abrir ...
+        3. Clicar em ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      description: "O que deveria acontecer. Cite a RN e a spec, se souber (ex.: RN05 da spec de Grade Horária)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: atual
+    attributes:
+      label: Comportamento atual
+      description: O que acontece. Inclua mensagem de erro, `traceId` e prints (sem dado real).
+    validations:
+      required: true
+
+  - type: input
+    id: dispositivo
+    attributes:
+      label: Aparelho e navegador
+      placeholder: "Android 14, Chrome 130 / Windows, Edge 130"
+
+  - type: dropdown
+    id: gravidade
+    attributes:
+      label: Gravidade
+      options:
+        - Crítica — dado de outra família ou escola exposto, chamada ou notas quebradas, sem contorno
+        - Alta — funcionalidade principal quebrada, com contorno difícil
+        - Média — funcionalidade quebrada, com contorno fácil
+        - Baixa — visual ou texto
+    validations:
+      required: true

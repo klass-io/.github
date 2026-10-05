@@ -1,0 +1,44 @@
+name: ✨ Melhoria
+description: Ideia para melhorar algo que já existe.
+title: "feat(<escopo>): "
+labels: ["melhoria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature nova nasce de uma **spec** no `docs-klass-hub`, não de issue. Use este formulário para registrar a ideia; se ela for aceita, vira card e, se precisar, spec.
+        Lembre que a comunicação é da escola para a família: ideia que abre um canal de volta precisa de decisão explícita.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual o problema?
+      description: Quem sofre com isso e em que momento.
+    validations:
+      required: true
+
+  - type: textarea
+    id: historia
+    attributes:
+      label: User Story
+      value: |
+        Como **[persona]**, quero **[ação]**, para que **[benefício]**.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Como você imagina a solução. Prints ou link do Penpot ajudam.
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+
+  - type: input
+    id: spec
+    attributes:
+      label: Spec relacionada
+      description: Nome da spec que a ideia altera, se houver.

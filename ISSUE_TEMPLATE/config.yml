@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🛡️ Reportar uma vulnerabilidade
+    url: https://github.com/klass-io/.github/blob/main/SECURITY.md
+    about: Nunca abra issue pública para falha de segurança. Siga a política de segurança.
+  - name: 🏫 Sou de uma escola ou família e preciso de ajuda
+    url: https://github.com/klass-io/.github/blob/main/SUPPORT.md
+    about: Responsáveis, alunos e professores falam com a própria escola. Veja os canais de suporte.
