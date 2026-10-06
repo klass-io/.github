@@ -31,9 +31,7 @@ Com a sua autorização, damos o crédito pela descoberta quando a correção fo
 
 **Dentro do escopo:**
 
-- `klass.com.br`
-- `app.klass.com.br`, `professor.klass.com.br`, `gestor.klass.com.br` e `admin.klass.com.br`
-- `api.klass.com.br`
+- `klass.com.br` e os subdomínios dele
 - o código dos repositórios da organização **klass-io**
 
 **Fora do escopo:**

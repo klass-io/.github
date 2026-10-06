@@ -26,5 +26,5 @@
 ## Depois do merge
 
 - [ ] Deploy de produção concluído
-- [ ] Health check e painéis do SigNoz sem erro novo
+- [ ] Health check e painéis de observabilidade sem erro novo
 - [ ] Cards movidos no Kanban

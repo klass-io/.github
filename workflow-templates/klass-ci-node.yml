@@ -21,8 +21,7 @@ jobs:
     # with:
     #   migrations-check: true   # só na API
 
-  # Deploy: específico de cada repositório (Railway na API, Cloudflare Pages nos apps,
-  # GitHub Packages no lib-klass-design). Roda só depois do CI verde.
+  # Deploy: específico de cada repositório, com os secrets dele. Roda só depois do CI verde.
   # deploy:
   #   needs: ci
   #   if: github.ref == 'refs/heads/homolog' || github.ref == 'refs/heads/production'
