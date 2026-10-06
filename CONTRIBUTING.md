@@ -26,7 +26,7 @@ Use o **e-mail corporativo** ou o e-mail `noreply` do GitHub no `git config user
 - Um PR = um card. Preencha o modelo de PR: ele traz o checklist da Definition of Done.
 - Título no mesmo formato dos commits.
 - O merge só acontece com CI verde e pelo menos uma aprovação.
-- Para abrir um PR de release ou de hotfix, acrescente `?template=release.md` ou `?template=hotfix.md` ao endereço de criação do PR.
+- O modelo padrão é o de **homologação**. Para levar `homolog` a produção ou abrir um hotfix, acrescente `?template=production.md` ou `?template=hotfix.md` ao endereço de criação do PR.
 
 ## Segurança e privacidade
 

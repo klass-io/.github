@@ -1,4 +1,8 @@
-<!-- Modelo padrão: feature/* → homolog. Release: ?template=release.md · Hotfix: ?template=hotfix.md -->
+<!--
+  HOMOLOGAÇÃO: feature/* → homolog
+  Produção: ?template=production.md · Hotfix: ?template=hotfix.md
+  Pergunta deste PR: "está pronto para ser testado em homologação?"
+-->
 
 ## O que muda
 
@@ -11,13 +15,29 @@
 - RNs cobertas:
 - ADRs aplicadas:
 
-## Como testar
+## Como testar em homologação
+
+<!-- Roteiro que outra pessoa consegue seguir sem te perguntar nada. -->
+
+- **Perfil e escola de teste:**
+- **Dados de exemplo necessários:**
 
 1.
+2.
+
+**Resultado esperado:**
 
 ## Prints
 
 <!-- Obrigatório se mexe em tela. Sem dado real de aluno ou família. -->
+
+## Mudanças de dados e configuração
+
+- [ ] Não há migration, seed ou variável de ambiente nova
+- [ ] Migration revisada e compatível com a versão anterior (o deploy não quebra quem ainda roda o código antigo)
+- [ ] Seed atualizado para entidade nova (idempotente, travado contra produção)
+- [ ] Variável de ambiente nova criada em homologação e listada no `.env.example`
+- [ ] Atrás de feature flag: `nome-da-flag` (estado em homologação: ligada / desligada)
 
 ## Checklist (DoD)
 
@@ -41,7 +61,5 @@
 **Técnico**
 - [ ] Testes unitários do caminho feliz e dos caminhos tristes da spec
 - [ ] E2E, quando o fluxo exige
-- [ ] Migration revisada
-- [ ] Swagger/OpenAPI atualizado para rota criada, alterada ou removida
-- [ ] Seed atualizado para entidade nova (idempotente, travado contra produção)
+- [ ] Contrato da API (OpenAPI) atualizado para rota criada, alterada ou removida
 - [ ] Modelo de Dados, Contratos e Glossário atualizados, se mudaram
